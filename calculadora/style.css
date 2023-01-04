@@ -1,0 +1,77 @@
+/* ********** Custom properties ********** */
+:root{
+    --font:"Chakra Petch";
+    --text-color:#04011b;
+    --background-color:#060430;
+    --border-color:#fdf6f6;
+}
+
+/* ********Reset******* */
+html{
+    box-sizing: border-box;
+    font-family: var(--font);
+    font-size: 16px;
+    background-color: #94aca5;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+body{
+    overflow-x: hidden;
+    color: var(--text-color);
+}
+
+/* ************site styles************ */
+.calculadora{
+    background-color: var(--background-color);
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    width: 300px;
+    height: 440px;
+    border-radius: 25px;
+    margin-top: 2rem;
+    border: medium solid #35323a;
+}
+
+.calculadora td button{
+    display: block;
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    color: var(--text-color);
+    border-radius: 20px;
+    background-image: linear-gradient(#678976, #48419748, #7f7493);
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.calculadora td button:hover{
+    opacity: .7;
+}
+
+.calculadora td span{
+    background-color: rgb(127, 125, 125);
+    border: thin solid rgb(7, 7, 7);
+    display: block;
+    height: 80px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    justify-content: end;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 70px;
+    overflow-y: scroll;
+    overflow-y: hidden;
+    text-align: center;
+    width: 250px;
+    display: flex;
+    text-align: end;
+    padding-right: 1rem;
+}
+
+
